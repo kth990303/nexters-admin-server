@@ -11,4 +11,11 @@ class PasswordTest {
 
         password.value shouldNotBe "1234"
     }
+
+    @Test
+    fun `비밀번호 암호화 테스트 2`() {
+        val password = Password("12345")
+
+        password.value shouldNotBe "12345"
+    }
 }
